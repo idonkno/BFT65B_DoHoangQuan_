@@ -1,0 +1,12 @@
+rule,description,action,rows_before,rows_affected,rows_after,note
+R1_duplicates,"duplicate (CERT,REPDTE)",drop,1682738,0,1682738,""
+R3_basel_zero_to_nan,RBC1AAJ/RBCRWAJ == 0 before 1990-01-01 -> NaN,set_nan,1682738,495584,1682738,cell count; rows kept
+F1_post_failure_rows,"REPDTE >= failure date (reporting after failure); kept, flagged, y=0",flag,1682738,1211,1682738,decide exclusion in modelling stage
+R2_asset_nonpositive,ASSET null or <= 0,drop,1682738,0,1682738,positives (y=1) among dropped rows: 0
+F_DEP_lt_0,DEP_lt_0 (flag only; values untouched),flag,1682738,0,1682738,""
+F_LNLSNET_gt_LNLSGR,LNLSNET_gt_LNLSGR (flag only; values untouched),flag,1682738,16,1682738,""
+F_LNATRES_lt_0,LNATRES_lt_0 (flag only; values untouched),flag,1682738,9,1682738,""
+F_EQ_ASSET_extreme,EQ_ASSET_extreme (flag only; values untouched),flag,1682738,21510,1682738,""
+F_EQ_lt_0,EQ_lt_0 (flag only; values untouched),flag,1682738,15647,1682738,""
+N1_structural_nan,NaNs in numeric fields (e.g. pre-1990 Basel ratios) preserved for in-pipeline imputation,keep,1682738,1825751,1682738,"cell count, not rows"
+TOTAL,rows input -> panel,summary,1682738,0,1682738,""

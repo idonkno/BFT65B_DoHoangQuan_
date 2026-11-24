@@ -1,0 +1,4 @@
+engine,wall_time_s,peak_ram_mb,baseline_ram_mb,spark_startup_s,all_runs_s,speedup_vs_pandas,marginal_ram_mb
+pandas,1.864,1234.965,87.535,0.0,1.88;1.81;1.86,1.0,1147.43
+polars,0.917,785.879,87.398,0.0,0.93;0.88;0.92,2.034,698.48
+pyspark,11.836,1741.141,532.781,8.524,11.95;11.64;11.84,0.158,1208.359

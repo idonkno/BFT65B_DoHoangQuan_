@@ -1,0 +1,42 @@
+check,passed,detail
+features_have_no_META_LABEL_FLAG_columns,True,32 features
+feature_builder_input_has_no_label_or_meta,True,
+X_columns_equal_FEATURES,True,
+X_has_no_key_or_target_columns,True,
+max_dev_date_plus_4Q_lt_min_test_date,True,dev_max=20061231 test_min=20080331 gap_q=4
+dev_max_le_DEV_END,True,
+test_range_ok,True,
+no_embargo_rows_in_dev_or_test,True,
+no_row_overlap_dev_test,True,
+fold1_1990Q1-1992Q4_embargo_ge_4Q,True,gap_quarters=4
+fold1_train_val_disjoint,True,
+fold1_train_label_horizon_before_val,True,
+fold2_1993Q1-1995Q4_embargo_ge_4Q,True,gap_quarters=4
+fold2_train_val_disjoint,True,
+fold2_train_label_horizon_before_val,True,
+fold3_1996Q1-1998Q4_embargo_ge_4Q,True,gap_quarters=4
+fold3_train_val_disjoint,True,
+fold3_train_label_horizon_before_val,True,
+fold4_1999Q1-2002Q4_embargo_ge_4Q,True,gap_quarters=4
+fold4_train_val_disjoint,True,
+fold4_train_label_horizon_before_val,True,
+fold5_2003Q1-2006Q4_embargo_ge_4Q,True,gap_quarters=4
+fold5_train_val_disjoint,True,
+fold5_train_label_horizon_before_val,True,
+expanding_window_train_sizes_increase,True,
+features_unchanged_when_future_data_deleted(2000-12-31 cutoff),True,"rows=972,047"
+fold1_winsor_fit_rows_equal_train_rows,True,"n_fit=353,996"
+fold1_winsor_bounds_equal_train_only_quantiles,True,"cols=['LOAN_G4', 'CHBAL_ASSET', 'ROE']"
+fold1_imputer_fitted_on_train_stats_only,True,imputer medians == nanmedian(clip(train)) over all train rows
+fold2_winsor_fit_rows_equal_train_rows,True,"n_fit=541,096"
+fold2_winsor_bounds_equal_train_only_quantiles,True,"cols=['LNCI_LOANS', 'CAP_QOQ', 'CHBAL_ASSET']"
+fold2_imputer_fitted_on_train_stats_only,True,imputer medians == nanmedian(clip(train)) over all train rows
+fold3_winsor_fit_rows_equal_train_rows,True,"n_fit=704,453"
+fold3_winsor_bounds_equal_train_only_quantiles,True,"cols=['CAP_Z', 'DEPDOM_DEP', 'ELNATR_ASSET']"
+fold3_imputer_fitted_on_train_stats_only,True,imputer medians == nanmedian(clip(train)) over all train rows
+fold4_winsor_fit_rows_equal_train_rows,True,"n_fit=845,429"
+fold4_winsor_bounds_equal_train_only_quantiles,True,"cols=['ORE_ASSET', 'NPL_Z', 'ROE']"
+fold4_imputer_fitted_on_train_stats_only,True,imputer medians == nanmedian(clip(train)) over all train rows
+fold5_winsor_fit_rows_equal_train_rows,True,"n_fit=1,010,188"
+fold5_winsor_bounds_equal_train_only_quantiles,True,"cols=['LTD', 'RBCRWAJ', 'ELNATR_ASSET']"
+fold5_imputer_fitted_on_train_stats_only,True,imputer medians == nanmedian(clip(train)) over all train rows

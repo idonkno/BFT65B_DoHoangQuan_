@@ -1,0 +1,24 @@
+CLUSTER THRESHOLD ANALYSIS (linear extrapolation of measured marginal RAM)
+Base workload: 1,682,738 rows, panel parquet 121 MB; laptop RAM 15.7 GB, usable (80%) 12.6 GB, 20 cores.
+Assumptions: peak = baseline + marginal * scale; time = wall * scale; Spark local heap is capped at spark.driver.memory=6g, so beyond that it spills to disk (time grows super-linearly) - its RSS estimate is a lower bound.
+
+engine    scale  rows (M)  est peak GB  est time s  fits in 80% RAM?
+pandas       1x       1.7          1.2           2  YES
+pandas      10x      16.8         11.3          19  YES
+pandas     100x     168.3        112.1         186  NO
+polars       1x       1.7          0.8           1  YES
+polars      10x      16.8          6.9           9  YES
+polars     100x     168.3         68.3          92  NO
+pyspark      1x       1.7          1.7          12  YES
+pyspark     10x      16.8         12.3         118  YES
+pyspark    100x     168.3        118.5        1184  NO
+
+Max in-memory scale factor on this laptop (80% RAM):
+  pandas  :   11.1x  (~19 M rows)
+  polars  :   18.3x  (~31 M rows)
+  pyspark :   10.2x  (~17 M rows)
+At 100x, pandas needs ~112 GB working set -> >= 3 executors of 64 GB (60% usable) if distributed.
+At 100x, polars needs ~68 GB working set -> >= 2 executors of 64 GB (60% usable) if distributed.
+
+DECISION RULE: single-machine Pandas/Polars is sufficient up to ~11x (~19 M rows). Beyond that (or when the working set > 80% RAM, or a job must finish within an SLA that 1 node cannot meet), a Spark cluster is justified.
+At 10x (16.8M rows) the workload still fits a laptop; at 100x (168M rows) it does not.

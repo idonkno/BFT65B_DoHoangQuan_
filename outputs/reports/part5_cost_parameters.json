@@ -1,0 +1,9 @@
+{
+ "n_dev_failures_with_cost": 2288.0,
+ "c_fn_mean_k": 55981.86636462367,
+ "c_fn_median_k": 8234.843,
+ "pos_rows_per_failure": 3.8039301310043667,
+ "c_fn_row_k": 14716.849268165332,
+ "c_fp_k": 100.0,
+ "base_ratio": 147.1684926816533
+}

@@ -1,0 +1,10 @@
+{
+ "quarters": 170,
+ "rows": 1682738,
+ "api_total_rows": 1682738,
+ "distinct_cert": 24064,
+ "duplicate_cert_repdte": 0,
+ "missing_quarters": [],
+ "incomplete_quarters": [],
+ "ok": true
+}

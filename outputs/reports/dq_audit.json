@@ -1,0 +1,945 @@
+{
+ "row_counts": {
+  "financials": 1682738,
+  "panel": 1682738,
+  "failures_rows": 4117,
+  "failure_restype_rows": 3039,
+  "institutions_rows": 27838
+ },
+ "date_range": [
+  "1984-03-31",
+  "2026-06-30"
+ ],
+ "duplicates_and_gaps": {
+  "duplicate_cert_repdte": 0,
+  "n_gaps": 33,
+  "n_banks_with_gap": 32,
+  "n_banks": 24064,
+  "max_gap_quarters": 30,
+  "total_missing_quarters": 92
+ },
+ "structural_shifts": {
+  "STNAME": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0001,
+   "max_yearly_missing": 0.0002,
+   "structural_shift": false
+  },
+  "ASSET": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "DEP": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "DEPDOM": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "EQ": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0016,
+   "max_yearly_missing": 0.0039,
+   "structural_shift": false
+  },
+  "BRO": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0017,
+   "max_yearly_missing": 0.1774,
+   "structural_shift": false
+  },
+  "CHBAL": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "SC": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "LNLSGR": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "LNLSNET": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "LNRE": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "LNCI": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "LNCON": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0039,
+   "structural_shift": false
+  },
+  "LNATRES": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0016,
+   "max_yearly_missing": 0.0039,
+   "structural_shift": false
+  },
+  "NCLNLS": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.018,
+   "structural_shift": false
+  },
+  "P3ASSET": {
+   "first_year_available": 2001,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 1.0,
+   "structural_shift": true
+  },
+  "P9ASSET": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.1966,
+   "structural_shift": false
+  },
+  "NAASSET": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.1966,
+   "structural_shift": false
+  },
+  "NTLNLS": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.002,
+   "max_yearly_missing": 0.1849,
+   "structural_shift": false
+  },
+  "ORE": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0016,
+   "max_yearly_missing": 0.0039,
+   "structural_shift": false
+  },
+  "NETINC": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0017,
+   "max_yearly_missing": 0.0092,
+   "structural_shift": false
+  },
+  "INTINC": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0017,
+   "max_yearly_missing": 0.0092,
+   "structural_shift": false
+  },
+  "EINTEXP": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0018,
+   "max_yearly_missing": 0.0185,
+   "structural_shift": false
+  },
+  "NONII": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0017,
+   "max_yearly_missing": 0.0092,
+   "structural_shift": false
+  },
+  "NONIX": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0017,
+   "max_yearly_missing": 0.0092,
+   "structural_shift": false
+  },
+  "ELNATR": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0018,
+   "max_yearly_missing": 0.1849,
+   "structural_shift": false
+  },
+  "ROA": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "ROE": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.002,
+   "max_yearly_missing": 0.0316,
+   "structural_shift": false
+  },
+  "NIMY": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.0,
+   "structural_shift": false
+  },
+  "RBC1AAJ": {
+   "first_year_available": 1984,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 0.1832,
+   "structural_shift": false
+  },
+  "RBCRWAJ": {
+   "first_year_available": 1990,
+   "min_yearly_missing": 0.0,
+   "max_yearly_missing": 1.0,
+   "structural_shift": true
+  }
+ },
+ "anomalies_all": [
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "ASSET_le_0",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "ASSET_null",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "DEP_lt_0",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "LNLSNET_gt_LNLSGR",
+   "n_total": 1682738,
+   "n_flagged": 16,
+   "rate": 1e-05
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "LNATRES_lt_0",
+   "n_total": 1682738,
+   "n_flagged": 9,
+   "rate": 5e-06
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "EQ_lt_0",
+   "n_total": 1682738,
+   "n_flagged": 15647,
+   "rate": 0.009299
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "EQ_ASSET_extreme",
+   "n_total": 1682738,
+   "n_flagged": 21510,
+   "rate": 0.012783
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "EQ_gt_ASSET",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "DEP_gt_ASSET",
+   "n_total": 1682738,
+   "n_flagged": 6205,
+   "rate": 0.003687
+  },
+  {
+   "table": "failures",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "restype_ASSISTANCE",
+   "n_total": 4117,
+   "n_flagged": 593,
+   "rate": 0.144037
+  },
+  {
+   "table": "failures",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "CERT_with_both_ASSISTANCE_and_FAILURE",
+   "n_total": 3586,
+   "n_flagged": 37,
+   "rate": 0.010318
+  },
+  {
+   "table": "failures",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "CERT_not_in_institutions",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "ENDEFYMD_before_ESTYMD",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "anomaly",
+   "group": "ALL",
+   "field": "ACTIVE_vs_ENDEFYMD_inconsistent",
+   "n_total": 27838,
+   "n_flagged": 22,
+   "rate": 0.00079
+  }
+ ],
+ "missingness_all": [
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "STNAME",
+   "n_total": 1682738,
+   "n_flagged": 183,
+   "rate": 0.000109
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ASSET",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "DEP",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "DEPDOM",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "EQ",
+   "n_total": 1682738,
+   "n_flagged": 4139,
+   "rate": 0.00246
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "BRO",
+   "n_total": 1682738,
+   "n_flagged": 16752,
+   "rate": 0.009955
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "CHBAL",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "SC",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNLSGR",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNLSNET",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNRE",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNCI",
+   "n_total": 1682738,
+   "n_flagged": 1,
+   "rate": 1e-06
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNCON",
+   "n_total": 1682738,
+   "n_flagged": 3932,
+   "rate": 0.002337
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "LNATRES",
+   "n_total": 1682738,
+   "n_flagged": 4140,
+   "rate": 0.00246
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NCLNLS",
+   "n_total": 1682738,
+   "n_flagged": 2498,
+   "rate": 0.001484
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "P3ASSET",
+   "n_total": 1682738,
+   "n_flagged": 972047,
+   "rate": 0.577658
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "P9ASSET",
+   "n_total": 1682738,
+   "n_flagged": 77750,
+   "rate": 0.046204
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NAASSET",
+   "n_total": 1682738,
+   "n_flagged": 77749,
+   "rate": 0.046204
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NTLNLS",
+   "n_total": 1682738,
+   "n_flagged": 79929,
+   "rate": 0.047499
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ORE",
+   "n_total": 1682738,
+   "n_flagged": 4140,
+   "rate": 0.00246
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NETINC",
+   "n_total": 1682738,
+   "n_flagged": 4683,
+   "rate": 0.002783
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "INTINC",
+   "n_total": 1682738,
+   "n_flagged": 4683,
+   "rate": 0.002783
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "EINTEXP",
+   "n_total": 1682738,
+   "n_flagged": 6428,
+   "rate": 0.00382
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NONII",
+   "n_total": 1682738,
+   "n_flagged": 4683,
+   "rate": 0.002783
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NONIX",
+   "n_total": 1682738,
+   "n_flagged": 4683,
+   "rate": 0.002783
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ELNATR",
+   "n_total": 1682738,
+   "n_flagged": 43177,
+   "rate": 0.025659
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ROA",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ROE",
+   "n_total": 1682738,
+   "n_flagged": 18746,
+   "rate": 0.01114
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NIMY",
+   "n_total": 1682738,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "RBC1AAJ",
+   "n_total": 1682738,
+   "n_flagged": 76049,
+   "rate": 0.045194
+  },
+  {
+   "table": "financials",
+   "check": "missing",
+   "group": "ALL",
+   "field": "RBCRWAJ",
+   "n_total": 1682738,
+   "n_flagged": 419535,
+   "rate": 0.249317
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "QBFDEP",
+   "n_total": 4117,
+   "n_flagged": 2,
+   "rate": 0.000486
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "COST",
+   "n_total": 4117,
+   "n_flagged": 637,
+   "rate": 0.154724
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "QBFASSET",
+   "n_total": 4117,
+   "n_flagged": 154,
+   "rate": 0.037406
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "FAILDATE",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "CERT",
+   "n_total": 4117,
+   "n_flagged": 488,
+   "rate": 0.118533
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "CITYST",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "RESTYPE",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "FAILYR",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "failures",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NAME",
+   "n_total": 4117,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ACTIVE",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "BKCLASS",
+   "n_total": 27838,
+   "n_flagged": 1,
+   "rate": 3.6e-05
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "CHANGEC1",
+   "n_total": 27838,
+   "n_flagged": 3476,
+   "rate": 0.124865
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "STNAME",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ENDEFYMD",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "CERT",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "ESTYMD",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "INSDATE",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  },
+  {
+   "table": "institutions",
+   "check": "missing",
+   "group": "ALL",
+   "field": "NAME",
+   "n_total": 27838,
+   "n_flagged": 0,
+   "rate": 0.0
+  }
+ ],
+ "split_summary": [
+  {
+   "SPLIT": "DEV",
+   "rows": 1195009,
+   "positive_rows_y1": 8711,
+   "distinct_banks": 23624,
+   "distinct_failing_banks_y1": 2290,
+   "first_repdate": "1984-03-31",
+   "last_repdate": "2006-12-31",
+   "prevalence": 0.007289484849068082
+  },
+  {
+   "SPLIT": "GAP",
+   "rows": 34754,
+   "positive_rows_y1": 48,
+   "distinct_banks": 8892,
+   "distinct_failing_banks_y1": 27,
+   "first_repdate": "2007-03-31",
+   "last_repdate": "2007-12-31",
+   "prevalence": 0.0013811359843471254
+  },
+  {
+   "SPLIT": "TEST",
+   "rows": 435446,
+   "positive_rows_y1": 2134,
+   "distinct_banks": 8798,
+   "distinct_failing_banks_y1": 545,
+   "first_repdate": "2008-03-31",
+   "last_repdate": "2025-06-30",
+   "prevalence": 0.004900722477643611
+  },
+  {
+   "SPLIT": "POST",
+   "rows": 17529,
+   "positive_rows_y1": 11,
+   "distinct_banks": 4461,
+   "distinct_failing_banks_y1": 4,
+   "first_repdate": "2025-09-30",
+   "last_repdate": "2026-06-30",
+   "prevalence": 0.0006275315191967597
+  }
+ ],
+ "exit_classes": [
+  {
+   "META_EXIT_CLASS": "MERGER_OR_VOLUNTARY",
+   "rows": 922924,
+   "banks": 16790
+  },
+  {
+   "META_EXIT_CLASS": "ACTIVE",
+   "rows": 659019,
+   "banks": 4201
+  },
+  {
+   "META_EXIT_CLASS": "FAILURE",
+   "rows": 89985,
+   "banks": 2841
+  },
+  {
+   "META_EXIT_CLASS": "UNKNOWN",
+   "rows": 10810,
+   "banks": 232
+  }
+ ],
+ "cleaning_log": [
+  {
+   "rule": "R1_duplicates",
+   "description": "duplicate (CERT,REPDTE)",
+   "action": "drop",
+   "rows_before": 1682738,
+   "rows_affected": 0,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "R3_basel_zero_to_nan",
+   "description": "RBC1AAJ/RBCRWAJ == 0 before 1990-01-01 -> NaN",
+   "action": "set_nan",
+   "rows_before": 1682738,
+   "rows_affected": 495584,
+   "rows_after": 1682738,
+   "note": "cell count; rows kept"
+  },
+  {
+   "rule": "F1_post_failure_rows",
+   "description": "REPDTE >= failure date (reporting after failure); kept, flagged, y=0",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 1211,
+   "rows_after": 1682738,
+   "note": "decide exclusion in modelling stage"
+  },
+  {
+   "rule": "R2_asset_nonpositive",
+   "description": "ASSET null or <= 0",
+   "action": "drop",
+   "rows_before": 1682738,
+   "rows_affected": 0,
+   "rows_after": 1682738,
+   "note": "positives (y=1) among dropped rows: 0"
+  },
+  {
+   "rule": "F_DEP_lt_0",
+   "description": "DEP_lt_0 (flag only; values untouched)",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 0,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "F_LNLSNET_gt_LNLSGR",
+   "description": "LNLSNET_gt_LNLSGR (flag only; values untouched)",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 16,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "F_LNATRES_lt_0",
+   "description": "LNATRES_lt_0 (flag only; values untouched)",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 9,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "F_EQ_ASSET_extreme",
+   "description": "EQ_ASSET_extreme (flag only; values untouched)",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 21510,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "F_EQ_lt_0",
+   "description": "EQ_lt_0 (flag only; values untouched)",
+   "action": "flag",
+   "rows_before": 1682738,
+   "rows_affected": 15647,
+   "rows_after": 1682738,
+   "note": ""
+  },
+  {
+   "rule": "N1_structural_nan",
+   "description": "NaNs in numeric fields (e.g. pre-1990 Basel ratios) preserved for in-pipeline imputation",
+   "action": "keep",
+   "rows_before": 1682738,
+   "rows_affected": 1825751,
+   "rows_after": 1682738,
+   "note": "cell count, not rows"
+  },
+  {
+   "rule": "TOTAL",
+   "description": "rows input -> panel",
+   "action": "summary",
+   "rows_before": 1682738,
+   "rows_affected": 0,
+   "rows_after": 1682738,
+   "note": ""
+  }
+ ]
+}

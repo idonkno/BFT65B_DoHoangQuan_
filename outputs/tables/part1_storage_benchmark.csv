@@ -1,0 +1,8 @@
+format,compression,size_mb,compression_ratio_vs_csv,full_scan_s,filtered_query_s,rows_full,rows_filtered
+raw_csv,none,385.34,1.0,6.792,3.9562,1682738,62027
+parquet_single,snappy,175.861,2.19,0.0875,0.0185,1682738,62027
+parquet_hive_YEAR,snappy,230.248,1.67,0.1654,0.058,1682738,62027
+parquet_single,zstd,147.321,2.62,0.0847,0.0206,1682738,62027
+parquet_hive_YEAR,zstd,173.134,2.23,0.1689,0.0593,1682738,62027
+parquet_single,gzip,148.28,2.6,0.1087,0.0226,1682738,62027
+parquet_hive_YEAR,gzip,180.894,2.13,0.4262,0.0905,1682738,62027
